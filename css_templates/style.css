@@ -1,0 +1,188 @@
+/*General*/
+.general_font{
+    font-family: Helvetica;
+    font-size: 18px;
+}
+
+.general_wrapper{
+    padding: 3em;
+    display: grid;
+}
+/*Header CSS*/
+.header_background{
+    background-image: url('../images/motherboard.jpg');
+    opacity: 1;
+    min-height: 500px;
+    position: relative;
+    /*Parallax Scrolling Effect*/
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+.header_layer{
+    background-color: lightcyan;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+    overflow: hidden;
+}
+
+.header_header{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 30px;
+    text-align: center;
+    grid-column: 8/22;
+    margin:0;
+    color: #484848;
+}
+
+.header_img{
+    float:left;
+}
+
+.header_info{
+    font-family: Helvetica;
+    font-size: 18px;
+}
+
+.header_wrapper{
+    padding: 3em;
+    display: grid;
+    grid-template-columns: 55%;
+}
+
+/*Skill Section*/
+.skill_background{
+    padding: 3em;
+    background-color: #E8E8E8;
+    min-height: 200px;
+    text-align: center;
+    font-size: 24px;
+    overflow: hidden;
+}
+
+
+/*Fun CSS*/
+.fun_background{
+    padding: 3em;
+    background-color: white;
+    min-height: 600px;
+    overflow: hidden;
+    left: 0;
+}
+
+.fun_info{
+    font-family: Helvetica;
+    font-size: 28px;
+    text-align: center;
+}
+
+.fun_individual_info{
+    font-size: 20px;
+}
+.fun_grid{
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-gap: 10px;
+    padding: 10px;
+    justify-items: center;
+}
+
+.fun_container{
+    position: relative;
+}
+
+.fun_img{
+    opacity: 1;
+    width: 275px;
+    height: 300px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.fun_img_overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #323232;
+}
+
+.fun_container:hover .fun_img_overlay{
+    opacity: 1;
+
+}
+
+.fun_img_txt{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.fun_button{
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+.fun_button:hover{
+    background-color: black;
+    color: white;
+}
+
+/*Section 2 CSS*/
+.writing_background{
+    background-color: lightcyan;
+    min-height: 600px;
+    padding: 3em;
+}
+
+
+/*Footer CSS*/
+.global_footer{
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    background-color: #1dcaff;
+    overflow: hidden;
+}
+
+.footer_body{
+    color: white;
+    text-align: center;
+    font-family: brandon-grotesque, sans-serif;
+}
+
+.hover_highlight:link, .hover_highlight:visited{
+    text-decoration: none;
+    color:white;
+}
+
+.hover_highlight:hover{
+    background-image: linear-gradient(to right, transparent 50%, #ff6666 50%);
+    background-size: 200%;
+    transition: background-position 0.5s;
+
+    background-position: -100%;
+}
