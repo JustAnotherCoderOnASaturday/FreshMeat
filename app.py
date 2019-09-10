@@ -16,7 +16,7 @@ def reads():
 
 @app.route('/projects')
 def fun():
-    """Prankware downloads and stuff"""
+    """Downloads and stuff"""
     return render_template('projects.html')
 
 
